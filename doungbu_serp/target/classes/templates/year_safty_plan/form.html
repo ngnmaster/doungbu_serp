@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/initial.min.css">
+  <style id="1.3 연간 안전보건활동 계획서(서식.샘플)_9698_Styles">
+		.doc_block{
+			background: #747474;
+		}
+		table
+			{mso-displayed-decimal-separator:"\.";
+			mso-displayed-thousand-separator:"\,";}
+		.font59698
+			{color:windowtext;
+			font-size:8.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:돋움, monospace;
+			mso-font-charset:129;}
+		.font69698
+			{color:windowtext;
+			font-size:9.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;}
+		.font79698
+			{color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;}
+		.font89698
+			{color:windowtext;
+			font-size:24.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;}
+		.font99698
+			{color:windowtext;
+			font-size:10.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;}
+		.font109698
+			{color:windowtext;
+			font-size:10.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;}
+		.font119698
+			{color:windowtext;
+			font-size:14.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;}
+		.font129698
+			{color:windowtext;
+			font-size:9.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;}
+		.xl639698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:11.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:general;
+			vertical-align:middle;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl649698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:none;
+			border-left:.5pt solid windowtext;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl659698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:none;
+			border-left:none;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl669698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:.5pt solid windowtext;
+			border-bottom:none;
+			border-left:none;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl679698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:none;
+			border-bottom:none;
+			border-left:.5pt solid windowtext;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl689698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl699698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:.5pt solid windowtext;
+			border-bottom:none;
+			border-left:none;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl709698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:.5pt solid windowtext;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl719698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl729698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:.5pt solid windowtext;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl739698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:24.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:none;
+			border-left:.5pt solid windowtext;
+			background:#A6A6A6;
+			mso-pattern:black none;
+			white-space:normal;}
+		.xl749698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:"m\0022\/\0022d\;\@";
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:.5pt solid windowtext;
+			background:#D9D9D9;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl759698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:"m\0022\/\0022d\;\@";
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			background:#D9D9D9;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl769698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:"m\0022\/\0022d\;\@";
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:.5pt solid windowtext;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			background:#D9D9D9;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl779698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:"m\0022\/\0022d\;\@";
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:.5pt solid windowtext;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl789698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:"m\0022\/\0022d\;\@";
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl799698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:"m\0022\/\0022d\;\@";
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:.5pt solid windowtext;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl809698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:.5pt solid windowtext;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl819698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl829698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:12.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:.5pt solid windowtext;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			background:#BFBFBF;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl839698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:24.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:none;
+			border-left:none;
+			background:#A6A6A6;
+			mso-pattern:black none;
+			white-space:normal;}
+		.xl849698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:24.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:.5pt solid windowtext;
+			border-bottom:none;
+			border-left:none;
+			background:#A6A6A6;
+			mso-pattern:black none;
+			white-space:normal;}
+		.xl859698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:24.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:none;
+			border-bottom:none;
+			border-left:.5pt solid windowtext;
+			background:#A6A6A6;
+			mso-pattern:black none;
+			white-space:normal;}
+		.xl869698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:24.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			background:#A6A6A6;
+			mso-pattern:black none;
+			white-space:normal;}
+		.xl879698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:24.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:.5pt solid windowtext;
+			border-bottom:none;
+			border-left:none;
+			background:#A6A6A6;
+			mso-pattern:black none;
+			white-space:normal;}
+		.xl889698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:24.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:.5pt solid windowtext;
+			background:#A6A6A6;
+			mso-pattern:black none;
+			white-space:normal;}
+		.xl899698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:24.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			background:#A6A6A6;
+			mso-pattern:black none;
+			white-space:normal;}
+		.xl909698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:24.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:.5pt solid windowtext;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			background:#A6A6A6;
+			mso-pattern:black none;
+			white-space:normal;}
+		.xl919698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border:.5pt solid windowtext;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl929698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:general;
+			vertical-align:middle;
+			border:.5pt solid windowtext;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl939698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:9.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border:.5pt solid windowtext;
+			background:#F2F2F2;
+			mso-pattern:black none;
+			word-break:break-all;}
+		.xl949698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:.5pt solid windowtext;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl959698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl969698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:.5pt solid windowtext;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl979698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:9.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:none;
+			/* border-bottom:.5pt solid windowtext; */
+			border-left:.5pt solid windowtext;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl989698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:9.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:none;
+			/* border-bottom:.5pt solid windowtext; */
+			border-left:none;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl999698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:9.0pt;
+			font-weight:700;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:.5pt solid windowtext;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl1009698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:general;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:.5pt solid windowtext;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl1019698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:general;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:.5pt solid windowtext;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl1029698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:general;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:none;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl1039698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:11.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl1049698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:11.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:none;
+			border-right:.5pt solid windowtext;
+			border-bottom:none;
+			border-left:none;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			word-break:break-all;}
+		.xl1059698
+			{padding-top:1px;
+			padding-right:1px;
+			padding-left:1px;
+			mso-ignore:padding;
+			color:windowtext;
+			font-size:10.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:"맑은 고딕", monospace;
+			mso-font-charset:129;
+			mso-number-format:General;
+			text-align:center;
+			vertical-align:middle;
+			border-top:.5pt solid windowtext;
+			border-right:none;
+			border-bottom:.5pt solid windowtext;
+			border-left:.5pt solid windowtext;
+			mso-background-source:auto;
+			mso-pattern:auto;
+			white-space:normal;}
+		ruby
+			{ruby-align:left;}
+		rt
+			{color:windowtext;
+			font-size:8.0pt;
+			font-weight:400;
+			font-style:normal;
+			text-decoration:none;
+			font-family:돋움, monospace;
+			mso-font-charset:129;
+			mso-char-type:none;}
+		</style>
+  <title>연간 안전보건활동 계획서</title>
+</head>
+<body>
+  <div class="container">
+    <div data-html="../layout/lnb.html" id="lnb_wrap" class="lnb_plan"></div>
+    <div class="content_wrap">
+      <div class="title">
+        <p>
+          연간 안전보건활동 계획서
+        </p>
+      </div>
+      <div class="subtitle">
+        <p>
+          계획 > 연간 안전보건활동 계획서
+        </p>
+      </div>
+	  <form th:action="@{/year_safty_plan/form}" th:object="${yearSafetyPlanVo}" method="post">
+      <input type="text" th:field="${yearSafetyPlanVo.nm_document}" style="display: none;">
+      <div class="search_bar">
+        <div class="doc_caption">
+          <p>~에 관한 설명 및 결재 가이드라인이 들어가는 텍스트 박스입니다. </p>
+        </div>
+        <div class="btn_wrap">
+          <button type="submit">등록</button>
+          <button>취소</button>
+          <button class="btn_summit">제출</button>
+        </div>
+      </div>
+      <div class="board">
+        <div class="board_content">
+          <div id="1.3 연간 안전보건활동 계획서(서식.샘플)_9698" align=center x:publishsource="Excel">
+
+						<table border=0 cellpadding=0 cellspacing=0 width=1056 class=xl639698
+						 style='border-collapse:collapse;table-layout:fixed;width:1000pt'>
+						 <col class=xl639698 width=22 span=48 style='mso-width-source:userset;
+						 mso-width-alt:625;width:17pt'>
+						 <tr height=22 valign=middle style='mso-height-source:userset;height:16.5pt'>
+							<td colspan=33 height=22 class=xl1039698 width=726 style='border-right:.5pt solid black;
+							height:16.5pt;width:561pt'></td>
+							<td colspan=15 class=xl809698 bgcolor="#BFBFBF" align=center width=330
+							style='border-right:.5pt solid black;border-left:none;width:255pt'><font
+							class="font79698" size="3"><b>결재</b></font></td>
+						 </tr>
+						 <tr height=22 valign=middle style='mso-height-source:userset;height:16.5pt'>
+							<td colspan=33 height=22 class=xl1039698 style='border-right:.5pt solid black;
+							height:16.5pt'></td>
+							<td colspan=3 class=xl979698 align=center style='border-left:none'><b>작성</b></td>
+							<td colspan=4 class=xl989698 align=center><b>안전관리자</b></td>
+							<td colspan=4 class=xl989698 align=center><b>홍길동</b></td>
+							<td colspan=4 class=xl989698 style='border-right:.5pt solid black'>
+								<img src="sign.png" alt="" style="height: 20px; width: 88px;">
+							</td>
+						 </tr>
+						 <tr height=22 valign=middle style='mso-height-source:userset;height:16.5pt'>
+							<td colspan=33 height=22 class=xl1039698 style='border-right:.5pt solid black;
+							height:16.5pt'></td>
+							<td colspan=3 class=xl979698 align=center style='border-left:none'><b>작성</b></td>
+							<td colspan=4 class=xl989698 align=center><b>안전관리자</b></td>
+							<td colspan=4 class=xl989698 align=center><b>홍길동</b></td>
+							<td colspan=4 class=xl989698 style='border-right:.5pt solid black'>
+								<img src="sign.png" alt="" style="height: 20px; width: 88px;">
+							</td>
+						 </tr>
+						 <tr height=22 valign=middle style='mso-height-source:userset;height:16.5pt'>
+							<td colspan=48 rowspan=4 height=88 class=xl739698 bgcolor="#A6A6A6"
+							align=center width=1056 style='border-right:.5pt solid black;border-bottom:
+							.5pt solid black;height:66.0pt;width:816pt'><font class="font89698" size="6"><b>연간
+							안전보건활동 계획서(<input type="text" th:field="${yearSafetyPlanVo.dt_yaer}">)  <br>
+								<p th:if="${#fields.hasErrors('Dt_yaer')}" th:errors="*{Dt_yaer}">전체 오류 메시지</p>
+								</b></font><font class="font119698" size="5">(00000000 현장)</font>
+							</td>
+						 </tr>
+						 <tr height=22 valign=middle style='mso-height-source:userset;height:16.5pt'>
+						 </tr>
+						 <tr height=22 valign=middle style='mso-height-source:userset;height:16.5pt'>
+						 </tr>
+						 <tr height=22 valign=middle style='mso-height-source:userset;height:16.5pt'>
+						 </tr>
+						 <tr height=22 valign=middle style='mso-height-source:userset;height:16.5pt'>
+							<td colspan=3 rowspan=3 height=66 class=xl649698 bgcolor="#BFBFBF"
+							align=center style='border-right:.5pt solid black;border-bottom:.5pt solid black;
+							height:49.5pt'><font class="font79698" size="3"><b>구분</b></font></td>
+							<td colspan=10 rowspan=3 class=xl649698 bgcolor="#BFBFBF" align=center
+							style='border-right:.5pt solid black;border-bottom:.5pt solid black'><font
+							class="font79698" size="3"><b>안전보건활동</b></font></td>
+							<td colspan=4 rowspan=3 class=xl649698 bgcolor="#BFBFBF" align=center
+							style='border-right:.5pt solid black;border-bottom:.5pt solid black'><font
+							class="font79698" size="3"><b>주기</b></font></td>
+							<td colspan=3 rowspan=3 class=xl649698 bgcolor="#BFBFBF" align=center
+							style='border-right:.5pt solid black;border-bottom:.5pt solid black'><font
+							class="font79698" size="3"><b>시간</b></font></td>
+							<td colspan=12 class=xl779698 bgcolor="#BFBFBF" align=center
+							style='border-right:.5pt solid black;border-left:none'><font class="font79698"
+							size="3"><b>추진일정</b></font></td>
+							<td colspan=9 rowspan=3 class=xl649698 bgcolor="#BFBFBF" align=center
+							style='border-right:.5pt solid black;border-bottom:.5pt solid black'><font
+							class="font79698" size="3"><b>주관</b></font></td>
+							<td colspan=7 rowspan=3 class=xl649698 bgcolor="#BFBFBF" align=center
+							style='border-right:.5pt solid black;border-bottom:.5pt solid black'><font
+							class="font79698" size="3"><b>비고</b></font></td>
+						 </tr>
+						 <tr height=22 valign=middle style='mso-height-source:userset;height:16.5pt'>
+							<td colspan=3 height=22 class=xl749698 bgcolor="#D9D9D9" align=center
+							style='border-right:.5pt solid black;height:16.5pt;border-left:none'><b>1분기</b></td>
+							<td colspan=3 class=xl749698 bgcolor="#D9D9D9" align=center style='border-right:
+							.5pt solid black;border-left:none'><b>2분기</b></td>
+							<td colspan=3 class=xl749698 bgcolor="#D9D9D9" align=center style='border-right:
+							.5pt solid black;border-left:none'><b>3분기</b></td>
+							<td colspan=3 class=xl749698 bgcolor="#D9D9D9" align=center style='border-right:
+							.5pt solid black;border-left:none'><b>4분기</b></td>
+						 </tr>
+						 <tr height=22 valign=middle style='mso-height-source:userset;height:16.5pt'>
+							<td height=22 class=xl939698 bgcolor="#F2F2F2" align=center style='height:
+							16.5pt;border-top:none;border-left:none'>1</td>
+							<td class=xl939698 bgcolor="#F2F2F2" align=center style='border-top:none;
+							border-left:none'>2</td>
+							<td class=xl939698 bgcolor="#F2F2F2" align=center style='border-top:none;
+							border-left:none'>3</td>
+							<td class=xl939698 bgcolor="#F2F2F2" align=center style='border-top:none;
+							border-left:none'>4</td>
+							<td class=xl939698 bgcolor="#F2F2F2" align=center style='border-top:none;
+							border-left:none'>5</td>
+							<td class=xl939698 bgcolor="#F2F2F2" align=center style='border-top:none;
+							border-left:none'>6</td>
+							<td class=xl939698 bgcolor="#F2F2F2" align=center style='border-top:none;
+							border-left:none'>7</td>
+							<td class=xl939698 bgcolor="#F2F2F2" align=center style='border-top:none;
+							border-left:none'>8</td>
+							<td class=xl939698 bgcolor="#F2F2F2" align=center style='border-top:none;
+							border-left:none'>9</td>
+							<td class=xl939698 bgcolor="#F2F2F2" align=center style='border-top:none;
+							border-left:none'>10</td>
+							<td class=xl939698 bgcolor="#F2F2F2" align=center style='border-top:none;
+							border-left:none'>11</td>
+							<td class=xl939698 bgcolor="#F2F2F2" align=center style='border-top:none;
+							border-left:none'>12</td>
+						 </tr>
+						 <!-- --------------------한줄---------------------------------------------------- -->
+						 <tbody class="table_row"
+						    th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos}"
+             				th:each="yearSafetyPlanSubVos, itemStat : ${yearSafetyPlanVo.yearSafetyPlanSubVos}">
+						 <tr class="titleline" height=38 valign=middle style='mso-height-source:userset;height:28.5pt'
+						 	
+						 	th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos}"
+             				th:each="yearSafetyPlanSubListVos, itemStat2 : ${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos}">
+             				
+							<td colspan=3 height=38 class=xl1059698 align=center width=66
+							style='border-right:.5pt solid black;height:28.5pt;width:51pt'>
+							<input type="text" class="ck_first" style="width: 90%;" 
+                				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].nm_type}"
+                			>
+							<br>
+							<div class="doc_btn-wrap">
+								<button type="button" class="doc_btn" onclick="add_row(this, 'main_row', 'line_cnt')">+</button>
+								<button type="button" class="doc_btn" onclick="remove_row(this, 'main_row')">-</button>
+								<input id=line_cnt class=line_cnt type="hidden" value=0>
+							</div>	
+							</td>
+							<td colspan=2 class=xl1009698 style='border-left:none'
+								th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].nm_activity}"
+							>
+							
+								<div class="doc_btn-wrap">
+									<button type="button" class="doc_btn" onclick="add_row(this, 'sub_row', 'line_cnt2')">+</button>
+									<button type="button" class="doc_btn" onclick="remove_row(this, 'sub_row')">-</button>
+                    				<input id=line_cnt2 class=line_cnt2 type="hidden" value=0>
+								</div>
+							</td>
+							<td colspan=8 class=xl1029698 style='border-right:.5pt solid black'>
+								<input type="text" style="width: 90%;" 
+                  					th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].nm_activity}"
+                  				>
+							</td>
+							<td colspan=4 class=xl919698 style='border-left:none'>
+								<input type="text" style="width: 90%;" 
+			                	th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].nm_cycle}" 
+			                	>
+							</td>
+							<td colspan=3 class=xl919698 style='border-left:none'>
+								<input type="text" style="width: 90%;" 
+				                th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_time}"
+				                >
+							</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+	                  				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan1}"
+	                  			>
+                   			</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+	                  				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan2}"
+	                  			>
+	                  		</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+		                  			th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan3}"
+		                  		>
+							</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+	                  				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan4}"
+	                  			>
+	                  		</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+	                  				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan5}"
+	                  			>
+	                  			</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+	                  				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan6}"
+	                  			>
+							</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+	                  				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan7}"
+	                  			>
+	                  		</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+	                  				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan8}"
+	                  			>
+	                  		</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+	                  				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan9}"
+	                  			>
+	                  		</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+	                  				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan10}"
+	                  			>
+	                  		</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+	                  				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan11}"
+	                  			>
+	                  		</td>
+							<td class='xl929698' style='border-top:none;border-left:none'>
+								<input type="checkbox" name="xxx" value="1"
+	                  				th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].work_plan12}"
+	                  			>
+	                  		</td>
+							<td colspan=9 class=xl949698 style='border-right:.5pt solid black;border-left:
+							none'>
+								<input type="text" style="width: 90%;" 
+				                	th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].nm_major}"
+				                  id="name" >
+						  </td>
+							<td colspan=7 class=xl949698 style='border-right:.5pt solid black;border-left:
+							none'>
+								<input type="text" style="width: 90%;" 
+									th:field="${yearSafetyPlanVo.yearSafetyPlanSubVos[__${itemStat.index}__].yearSafetyPlanSubListVos[__${itemStat2.index}__].nm_note}"
+				                  id="name" >
+						  </td>
+						 </tr>
+						 </tbody>
+						 <tr height=0 style='display:none'>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+							<td width=22 style='width:17pt'></td>
+						 </tr>
+							<!-- --------------------한줄---------------------------------------------------- -->
+						
+						</table>
+						
+						</div>
+        </div>
+      </div>
+	</form>
+    </div>
+  </div>
+  <script src="/js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/prefix.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+	  $(".ck_first").each(function() {
+	        var rows = $(".ck_first" + "[value="+$(this).val()+"]");
+	        
+	        if (rows.length > 1) {
+	            rows.parent().eq(0).attr("rowspan", rows.length);
+	            rows.parent().not(":eq(0)").remove();
+	        }
+	    });
+  });
+
+    function add_row(tag, opt, opt2){
+      const regex_int = /[\d{0-999}]/;
+      const regex = /\[(.*?)\]/;
+      
+      let line_cnt = $(tag).siblings("#line_cnt").val();
+      
+      var line_cnt_arr = [];
+      var serch_tag = "";
+      if(opt2 == "line_cnt"){
+    	  serch_tag = 'table';
+      }else{
+    	  serch_tag = 'tbody';
+      }
+            
+      for(let i = 0; $(tag).parents(serch_tag).find('.'+opt2).length > i ; i++){
+    	  line_cnt_arr.push($(tag).parents(serch_tag).find('.'+opt2).eq(i).val());
+      }
+      
+
+      let max_line_cnt = Math.max.apply(null, line_cnt_arr) * 1 + 1;
+            
+      if(opt == 'sub_row'){
+        let table_line = $(tag).parents("tr");
+        let table_line_tag = table_line.clone();
+        
+        for(let i = 0 ; table_line_tag.find('input').length > i ; i++){
+        	
+        	let tag_name = table_line_tag.find('input').eq(i).attr("name");
+        	
+        	if(regex.test(tag_name)){   		
+        		var name_array = tag_name.split('.');
+
+        		let re_tag_name = name_array[name_array.length - 2].match(regex)[0];
+
+        		re_tag_name = re_tag_name.replace(regex_int, max_line_cnt);
+        		name_array[name_array.length - 2] = name_array[name_array.length - 2].replace(regex, re_tag_name);
+        		
+        		var name_array_reverse = "";
+        		
+        		for(let k = 0; name_array.length > k; k++){
+        			name_array_reverse += (name_array[k] + '.');
+        		}
+        		
+        		name_array_reverse = name_array_reverse.substr(0, name_array_reverse.length - 1);
+        		table_line_tag.find('input').eq(i).attr("name", name_array_reverse);
+
+        	}
+        	
+          table_line_tag.find('input').eq(i).val('');
+          table_line_tag.find('input').eq(i).prop('checked', false);
+        }
+
+        if(table_line.index() == 0){
+          table_line_tag.find('td').eq(0).remove();
+          
+        }
+        table_line_tag.find('#'+opt2).val(max_line_cnt);
+        table_line.after(table_line_tag);
+        $(tag).parents("tbody").find('tr').eq(0).find('td').eq(0).attr("rowspan", $(tag).parents("tbody").find('tr').length + 1);
+
+      }else if(opt == 'main_row'){
+
+        let tbody_line = $(tag).parents("tbody");
+        
+        let tbody_line_tag = tbody_line.clone();
+        let tbody_line_tag_length = tbody_line_tag.find('tr').length;
+        
+        for(let i = 0 ; tbody_line_tag.find('input').length > i ; i++){
+        	let tag_name = tbody_line_tag.find('input').eq(i).attr("name");
+        	if(regex.test(tag_name)){        		
+        		tbody_line_tag.find('input').eq(i).attr("name", tag_name.replace(regex, "["+max_line_cnt + "]"))
+        	}
+        	
+            tbody_line_tag.find('input').eq(i).val('');
+            tbody_line_tag.find('input').eq(i).prop('checked', false);
+          }
+
+        for(let i = tbody_line_tag_length ; i >= 1 ; i--){
+          tbody_line_tag.find('tr').eq(i).remove();
+        }
+        tbody_line_tag.find('#'+opt2).val(max_line_cnt);
+        tbody_line.after(tbody_line_tag);
+      }
+    }
+
+    function remove_row(tag, opt){
+      let tbody_line = $(tag).parents(".table_row");
+      let table_line = $(tag).parents("tr");
+      
+		//마지막 남은 한줄일때 삭제 불가
+      if(tbody_line.siblings(".table_row").length == 0 && table_line.siblings('tr').length == 0){
+          return;
+      }
+
+      if(opt == 'sub_row'){
+        $(tag).parents("tbody").find('tr').eq(0).find('td').eq(0).attr("rowspan", $(tag).parents("tbody").find('tr').length);
+        if(table_line.index() == 0){
+          $(tag).parents("tbody").find('tr').eq(1).prepend(table_line.find('td').eq(0));
+        }
+        
+        if(table_line.siblings('tr').length == 0){
+          tbody_line.remove();
+        }
+
+        table_line.remove();
+
+      }else if(opt == 'main_row'){
+        tbody_line.remove();
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<html lang="en" class=" -webkit-" xmlns xmlns:th="http://www.w3.org/1999/xhtml" : th="http://www.thymeleaf.org"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style media="" data-href="../css/style.css">/*# sourceURL=../css/style.css */
+/*@ sourceURL=../css/style.css */
+@charset "UTF-8";
+button {
+  cursor: pointer;
+}
+
+#lnb_wrap {
+  background: #262626;
+  width: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+#lnb_wrap a {
+  color: #fff;
+}
+#lnb_wrap p {
+  margin-top: 6px;
+}
+#lnb_wrap .lnb_home {
+  height: 110px;
+  margin: auto;
+}
+#lnb_wrap .lnb_menu li {
+  height: 90px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.container .content_wrap {
+  width: calc(100% - 100px);
+  background: #f2f2f2;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.container .content_wrap table {
+  margin: 0 auto;
+}
+.container .content_wrap .title {
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #AFAFAF;
+}
+.container .content_wrap .subtitle {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.container .content_wrap .board {
+  height: 740px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1294117647);
+  padding: 15px;
+  box-sizing: border-box;
+}
+.container .content_wrap .board_content {
+  height: 710px;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.container .search_bar {
+  height: 65px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1294117647);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container .search_bar .btn_wrap button {
+  height: 32px;
+  background: #fff;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #AFAFAF;
+  cursor: pointer;
+}
+
+.board .board_list {
+  height: 680px;
+  width: 100%;
+  background: red;
+}
+
+.num_nav-box {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num_nav-box a {
+  color: #F55E25;
+}
+.num_nav-box .now_num {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+.filters select {
+  height: 32px;
+  background: #fff;
+  padding-left: 7px;
+  padding-right: 7px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #AFAFAF;
+  text-align: center;
+  margin: 0 5px;
+}
+.filters .datepicker {
+  height: 32px;
+  background: #fff;
+  padding-left: 7px;
+  padding-right: 7px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #AFAFAF;
+  text-align: center;
+  text-align: center;
+}
+.filters .datepicker:nth-of-type(1) {
+  margin-right: 5px;
+}
+.filters .datepicker:nth-of-type(2) {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.filters button {
+  height: 32px;
+  background: #fff;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #AFAFAF;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.filters .btn_today {
+  margin-left: 5px;
+}
+.filters input[type=search] {
+  height: 32px;
+  background: #fff;
+  padding-left: 7px;
+  padding-right: 7px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #AFAFAF;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.fixed-table-container {
+  position: relative;
+  padding-top: 30px;
+  /* header-bg height값 */
+}
+.fixed-table-container .fixed-table-header-bg {
+  /*헤더(타이틀 영역)*/
+  border-bottom: 1px solid #3b3f2c;
+  text-align: center;
+  color: #666;
+  font-weight: bold;
+  height: 30px;
+  /* header-bg height값 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  /*border-bottom: 1px solid #000;*/
+}
+.fixed-table-container .fixed-table-wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+.fixed-table-container table.fixed-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.fixed-table-container table.fixed-table td {
+  height: 31px;
+  padding: 3px 10px 2px;
+  line-height: 31px;
+  text-align: center;
+  color: #666;
+}
+.fixed-table-container table.fixed-table th {
+  padding: 0px;
+  /* reset */
+}
+.fixed-table-container table.fixed-table .th-text {
+  position: absolute;
+  top: 0;
+  width: inherit;
+  line-height: 30px;
+  /* header-bg height값 */
+  border-color: #3b3f2c #c4c4c4;
+}
+.fixed-table-container table.fixed-table th:first-child .th-text {
+  border-left: none;
+}/*# sourceMappingURL=style.css.map */</style>
+  <style media="" data-href="../css/initial.min.css">/*# sourceURL=../css/initial.min.css */
+/*@ sourceURL=../css/initial.min.css */
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:0 0;text-decoration:none}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+html, body{ height: 100%; margin: 0;}
+ul, ol{ list-style: none; }
+h1,h2,h3,h4,h5,h6{ line-height: 1; }
+p{ word-break: keep-all; }</style>
+  <title>연간 안전보건활동 계획서_table</title>
+</head>
+<body>
+  <div class="container">
+    <div id="lnb_wrap"><ul>
+  <li>
+    <a href="#" class="lnb_home">
+      <img src="../img/main_logo.png" alt="">
+    </a>
+  </li>
+</ul>
+<ul class="lnb_menu">
+  <li>
+    <a href="#">
+      <img src="../img/plan.png" alt="">
+      <p>계획</p>
+    </a>
+  </li>
+</ul>
+</div>
+    <div class="content_wrap">
+      <div class="title">
+        <p>
+          연간 안전보건활동 계획서
+        </p>
+      </div>
+      <div class="subtitle">
+        <p>
+          계획 &gt; 연간 안전보건활동 계획서
+        </p>
+      </div>
+      <form role="form" th:action="@{/year_safty_plan/list}" th:object="${tableSearchVo}" method="post">
+      <div class="search_bar">
+        <div class="filters">
+        	<input type="hidden" th:field="${tableSearchVo.cd_worker}" />
+          <select name="title_site" id="title_site" th:field="${tableSearchVo.cd_site}">
+            <option value="AA00000" selected="">AA현장</option>
+          </select>
+          <span>상태</span>
+          <select name="status" id="status" th:field="${tableSearchVo.document_status}">
+            <option value="4" selected>전체</option>
+            <option value="0">작성중</option>
+            <option value="1">검토중</option>
+            <option value="2">승인</option>
+            <option value="3">반려</option>
+          </select>
+          <button class="btn_today" type="button">오늘</button>
+          <input type="date" placeholder="시작날짜" class="datepicker1" th:field="${tableSearchVo.Dt_from}">
+          ~
+          <input type="date" placeholder="종료날짜" class="datepicker2" th:field="${tableSearchVo.Dt_to}">
+          <select name="search" id="search">
+          	<option th:each="code : ${tableSearchVo.codeList}" th:value="${code.cd_code}" th:text="${code.nm_code}">
+          </select>
+          <input type="search" name="" id="" placeholder="검색어 입력" th:field="${tableSearchVo.nm_search}">
+          <button>조회</button>
+          <button type="button">초기화</button>
+        </form>
+        </div>
+        <div class="btn_wrap">
+          <button type="button" th:onclick="|location.href='@{/year_safty_plan/form}'|">등록</button>
+          <button>삭제</button>
+        </div>
+      </div>
+      <div class="board">
+        <div class="fixed-table-container" style="width:100%;height:648px;">
+          <div class="fixed-table-header-bg"></div>
+          <div class="fixed-table-wrapper">
+            <table id="tbl_employee" class="fixed-table">
+                   <thead>
+                    <tr>
+                      <th style="width:10%">
+                        <div class="th-text"><input type="checkbox" id="app_check_all" onclick="selectAll(this)"></div>
+                      </th>
+                      <th style="width:10%"><div class="th-text">상태</div></th>
+                      <th style="width:20%"><div class="th-text">제목</div></th>
+                      <th style="width:20%"><div class="th-text">현장명</div></th>
+                      <th style="width:10%"><div class="th-text">등록자</div></th>
+                      <th style="width:10%"><div class="th-text">등록일</div></th>
+                      <th style="width:10%"><div class="th-text">승인자</div></th>
+                      <th style="width:10%"><div class="th-text">승인일</div></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+					<tr th:each="yearSafetyPlanTableVo : ${yearSafetyPlanTableVo}">
+                       <td><input type="checkbox" name="emp_code" th:value="${yearSafetyPlanTableVo.nm_document}"></td>
+                       <td th:if="${yearSafetyPlanTableVo.document_status} == '0'" th:text="작성중"></td>
+                       <td>
+                       <a th:href="@{/year_safty_plan/form(nm_documnet = ${yearSafetyPlanTableVo.nm_document})}" th:text="|연간 안전보건활동 계획서(${yearSafetyPlanTableVo.dt_year})|"></a>
+                       </td>
+                       <td th:text="${yearSafetyPlanTableVo.nm_site}"></td>
+                       <td th:text="${yearSafetyPlanTableVo.nm_worker}"></td>
+                       <td th:text="${yearSafetyPlanTableVo.work_time}"></td>
+                       <td th:text="${yearSafetyPlanTableVo.nm_payment_user}"></td>
+                       <td th:text="${yearSafetyPlanTableVo.approval_time}"></td>
+                     </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+        <div class="num_nav-box">
+          <div class="num_bav">
+            <a href="#">&lt;</a>&nbsp;
+            <a href="#" class="now_num">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>&nbsp;
+            <a href="#">&gt;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/prefix.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css" />
+  <script type="text/javascript">
+
+  </script>
+
+</body></html>
